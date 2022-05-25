@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CMS Front demo</title>
+</head>
+
+<body>
+  <h1 data-cms="1" class="editable">Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</h1>
+  <h2>Cras mattis consectetur purus sit amet fermentum.</h2>
+  <div data-cms="2" data-cms-tag="strong | link | list">
+    <span style="font-weight: bold">Donec id elit non mi porta gravida</span> at eget metus. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+    Praesent commodo cursus magna, vel
+    scelerisque
+    nisl consectetur et. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+  </div>
+  <p>
+    Nullam id dolor id nibh ultricies vehicula ut id elit. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Vestibulum id ligula
+    porta felis euismod semper. Nullam quis risus eget urna mollis ornare vel eu leo. Donec sed odio dui.
+  </p>
+  <p data-cms="3">
+    Etiam porta sem malesuada magna mollis euismod. Etiam porta sem malesuada magna mollis euismod. Integer posuere erat a ante venenatis dapibus posuere velit
+    aliquet. Nulla vitae elit libero, a pharetra augue.
+  </p>
+  <div class="cms-front-control">
+    <button class="cms-front-btn">
+      <svg xmlns="http://www.w3.org/2000/svg" width="31" height="31">
+        <path fill="#FFF"
+          d="M22.5 0 3.96 18.52 0 31l12.48-3.97L31 8.5s-.14-2.98-2.84-5.67C25.47.14 22.5 0 22.5 0Zm.52 2.3c1.52.3 2.73.94 3.67 1.9.93.95 1.59 2.23 2 3.78l-2.56 2.57-5.68-5.68 2.04-2.03.53-.54ZM5.54 19.94c.01 0 1.7.43 3.4 2.13 1.84 1.7 2.12 3.26 2.12 3.26l.06.07-5.03 1.62-2.12-2.12 1.57-4.96Z" />
+      </svg>
+      <span>
+        <span>Édition en cours</span>
+        <span><span data-cms-count>...</span> élements</span>
+      </span>
+    </button>
+    <button class="cms-front-btn cms-front-saveBtn" data-cms-save>
+      Enregistrer
+    </button>
+  </div>
+  <script src="cms-front.js"></script>
+  <script>
+    const cmsFront = new CMSFront().init()
+  </script>
+</body>
+
+</html>
